@@ -108,10 +108,12 @@ public final class Person implements Comparable<Person> {
         if (other == this) {
             return 0;
         }
+        // use compare to compare the ID
         int idCompare = Long.compare(this.ID, other.ID);
         if (idCompare != 0) {
             return idCompare;
         }
+        // Use comparator for strings
         PersonNameComparator nameComparator = new PersonNameComparator();
         return nameComparator.compare(this, other);
 

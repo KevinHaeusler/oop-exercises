@@ -39,10 +39,11 @@ class PersonTest {
     @Test
     void testPersonToString() {
         Person person1 = new Person(1, "Kevin", "Haeusler");
-        assertEquals("Class: ch.hslu.oop.sw08.exercise1.Person\n" +
-                "ID: 1\n" +
-                "First Name: Kevin\n" +
-                "Last Name: Haeusler", person1.toString());
+        assertEquals("""
+                Class: ch.hslu.oop.sw08.exercise1.Person
+                ID: 1
+                First Name: Kevin
+                Last Name: Haeusler""", person1.toString());
     }
 
     //.suppress(Warning.NONFINAL_FIELDS). it wanted FirstName/Lastname to be final
