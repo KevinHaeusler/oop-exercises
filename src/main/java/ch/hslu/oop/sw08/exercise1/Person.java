@@ -14,9 +14,9 @@ public final class Person implements Comparable<Person> {
     /**
      * Instantiates a new Person.
      *
-     * @param id        the id
-     * @param firstname the firstname
-     * @param lastname  the lastname
+     * @param id        the id.
+     * @param firstname the firstname.
+     * @param lastname  the lastname.
      */
     public Person(long id, String firstname, String lastname) {
         if (firstname == null) {
@@ -36,7 +36,7 @@ public final class Person implements Comparable<Person> {
     /**
      * Gets id.
      *
-     * @return the id
+     * @return the id.
      */
     public final long getId() {
         return ID;
@@ -45,7 +45,7 @@ public final class Person implements Comparable<Person> {
     /**
      * Gets firstname.
      *
-     * @return the firstname
+     * @return the firstname.
      */
     public final String getFirstname() {
         return FirstName;
@@ -54,7 +54,7 @@ public final class Person implements Comparable<Person> {
     /**
      * Sets firstname.
      *
-     * @param firstname the firstname
+     * @param firstname the firstname.
      */
     public final void setFirstname(final String firstname) {
         this.FirstName = firstname;
@@ -63,7 +63,7 @@ public final class Person implements Comparable<Person> {
     /**
      * Gets lastname.
      *
-     * @return the lastname
+     * @return the lastname.
      */
     public final String getLastname() {
         return LastName;
@@ -72,7 +72,7 @@ public final class Person implements Comparable<Person> {
     /**
      * Sets lastname.
      *
-     * @param lastname the lastname
+     * @param lastname the lastname.
      */
     public final void setLastname(final String lastname) {
         this.LastName = lastname;
@@ -109,13 +109,11 @@ public final class Person implements Comparable<Person> {
             return 0;
         }
         // use compare to compare the ID
-        int idCompare = Long.compare(this.ID, other.ID);
-        if (idCompare != 0) {
-            return idCompare;
-        }
+        return Long.compare(this.ID, other.ID);
+
         // Use comparator for strings
-        PersonNameComparator nameComparator = new PersonNameComparator();
-        return nameComparator.compare(this, other);
+        //PersonNameComparator nameComparator = new PersonNameComparator();
+        //return nameComparator.compare(this, other);
 
     }
 }

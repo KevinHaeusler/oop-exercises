@@ -22,18 +22,10 @@ class PersonTest {
     }
 
     @Test
-    void testPersonSetFirstname() {
-    }
-
-    @Test
     void testPersonGetLastname() {
         Person person1 = new Person(1, "Kevin", "Haeusler");
         assertEquals("Haeusler", person1.getLastname());
 
-    }
-
-    @Test
-    void testPersonSetLastname() {
     }
 
     @Test
