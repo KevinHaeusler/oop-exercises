@@ -35,8 +35,4 @@ public class MathHelper {
         return Math.max(b, c);
     }
 
-    @Override
-    public String toString() {
-        return "Class: " + MathHelper.class.getName();
-    }
 }
