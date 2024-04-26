@@ -45,7 +45,7 @@ public class Element {
         Element mercury = new Element("Quecksilber", "Hg", -38.829f, 356.73f);
         Element lead = new Element("Blei", "Pb", 327.46f, 1749f);
 
-        return new Element[]{
+        return new Element[] {
                 nitrogen,
                 mercury,
                 lead
@@ -126,4 +126,5 @@ public class Element {
     public int hashCode() {
         return Objects.hash(this.name, this.scientificSymbol, this.meltingPointInCelsius, this.boilingPointInCelsius);
     }
+
 }
