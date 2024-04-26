@@ -38,7 +38,7 @@ class PersonTest {
                 Last Name: Haeusler""", person1.toString());
     }
 
-    //.suppress(Warning.NONFINAL_FIELDS). it wanted FirstName/Lastname to be final
+    // .suppress(Warning.NONFINAL_FIELDS). it wanted FirstName/Lastname to be final
     @Test
     public void testEqualsVerifier() {
         EqualsVerifier.forClass(Person.class).suppress(Warning.NONFINAL_FIELDS).verify();
@@ -92,6 +92,7 @@ class PersonTest {
         Person person2 = new Person(1, "Kevin", "nichtHaeusler");
         assertTrue(person1.compareTo(person2) < 0);
         assertTrue(person2.compareTo(person1) > 0);
+
     }
 
     @Test
