@@ -9,5 +9,7 @@ public class Demo {
         System.out.println(lead);
         System.out.println(mercury);
 
+        Temperature temperature = new Temperature(5f);
+        System.out.println(temperature);
     }
 }
