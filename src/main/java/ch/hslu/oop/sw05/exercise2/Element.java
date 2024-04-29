@@ -39,12 +39,21 @@ abstract class Element {
         return name;
     }
 
-    public float getmeltingPointInKelvin() {
+    public float getMeltingPointInKelvin() {
         return meltingPointInKelvin;
     }
 
-    public float getboilingPointInKelvin() {
+    public float getBoilingPointInKelvin() {
         return boilingPointInKelvin;
+    }
+
+    public String getAggregateState(float tempKelvin) {
+        if (tempKelvin < meltingPointInKelvin) {
+            return "solid";
+        } else if (tempKelvin > meltingPointInKelvin && tempKelvin < boilingPointInKelvin) {
+            return "liquid";
+        }
+        return "gaseous";
     }
 
     @Override

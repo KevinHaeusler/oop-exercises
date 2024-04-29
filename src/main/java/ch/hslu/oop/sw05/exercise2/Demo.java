@@ -8,5 +8,6 @@ public class Demo {
         System.out.println(nitrogen);
         System.out.println(lead);
         System.out.println(mercury);
+
     }
 }
