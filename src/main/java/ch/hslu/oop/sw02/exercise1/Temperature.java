@@ -1,6 +1,5 @@
 package ch.hslu.oop.sw02.exercise1;
 
-
 /**
  * SW02 Temperature
  * KevinHaeusler
@@ -85,6 +84,5 @@ public class Temperature {
             default -> "Ungültige Eingabe";
         };
     }
-
 
 }
