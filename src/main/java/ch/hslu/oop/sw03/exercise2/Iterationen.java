@@ -93,8 +93,6 @@ public final class Iterationen {
         if ((flagWidth & 1) == 0) {
             // The official proportions are cursed at 6:7:6:7 which we cant print correctly
             // if it is not a multiple of 26
-            int crossWidth = flagWidth / 2 * 3;
-            int crossThickness = crossWidth / 3;
 
         }
 
