@@ -29,6 +29,14 @@ public class Temperature {
         this.temperatureInKelvin = convertCelsiusToKelvin(temperatureInCelsius);
     }
 
+    public void changeTemperatureRelativeInKelvin(float temperatureInKelvin) {
+        this.temperatureInKelvin += validateTemperatureInKelvin(temperatureInKelvin);
+    }
+
+    public void changeTemperatureRelativeInCelsius(float temperatureInCelsius) {
+        this.temperatureInKelvin += convertCelsiusToKelvin(temperatureInCelsius);
+    }
+
     public static float convertKelvinToCelsius(float temperatureInKelvin) {
         return validateTemperatureInKelvin(temperatureInKelvin) - Temperature.KELVIN_OFFSET;
     }
