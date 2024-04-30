@@ -10,13 +10,13 @@ public class Demo {
         System.out.println(mercury);
 
         Temperature temperature = new Temperature(5f);
-        System.out.println("Temperature: " + temperature.getTemperatureInCelsius() + "State: "
+        System.out.println("Temperature in C: " + temperature.getTemperatureInCelsius() + "\tState: "
                 + mercury.getAggregateState(temperature.getTemperatureInKelvin()));
         temperature.setTemperatureInKelvin(300f);
-        System.out.println("Temperature: " + temperature.getTemperatureInCelsius() + "State: "
+        System.out.println("Temperature in C: " + temperature.getTemperatureInCelsius() + "\tState: "
                 + mercury.getAggregateState(temperature.getTemperatureInKelvin()));
         temperature.changeTemperatureRelativeInKelvin(400f);
-        System.out.println("Temperature: " + temperature.getTemperatureInCelsius() + "State: "
+        System.out.println("Temperature in C: " + temperature.getTemperatureInCelsius() + "\tState: "
                 + mercury.getAggregateState(temperature.getTemperatureInKelvin()));
 
     }

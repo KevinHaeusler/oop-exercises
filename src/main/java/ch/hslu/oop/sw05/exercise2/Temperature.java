@@ -10,7 +10,7 @@ public class Temperature {
     }
 
     public Temperature() {
-        this.temperatureInKelvin = 0f;
+        this.temperatureInKelvin = 293.15f;
     }
 
     public float getTemperatureInKelvin() {
